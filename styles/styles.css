@@ -1,0 +1,149 @@
+body {
+    background-image: url(https://cdn.unenvironment.org/2022-09/nicolai-kramer-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 100%;
+    font-family: sans-serif;   
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#gradient {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgb(5,3,33);
+    background: linear-gradient(0deg, rgba(5, 3, 33, 0.95) 0%, rgba(255,255,255,0) 100%);
+    height: 100vh;   
+    z-index: -1;
+}
+
+#black_screen {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: black ;
+    height: 200vh;   
+    z-index: -2;
+    opacity: 0%;
+    animation-name: blackout;
+    animation-duration: 3s;
+}
+
+#sidenav {
+    opacity: 0;
+    position:absolute;
+    top:35%;
+    height:30%;
+    animation-name: sidenav;
+    animation-delay: 200ms;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#sidenav ul {
+    list-style: none;
+}
+
+#sidenav li {
+    margin-top: 3rem;
+}
+
+#sidenav a {
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 10px;
+    border-radius: 10px;
+    color:white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 50%);
+    transition-duration: 400ms;
+}
+#sidenav li :hover {
+    background-color: rgba(255, 255, 255, 30%);
+    transition-duration: 400ms;
+}
+
+
+#container {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; 
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.212);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 50%);
+    border-radius: 10px;
+    animation-delay: 400ms;
+    animation-name: container;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#container p {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+#container2 {
+    position:absolute;
+    top: 100%;
+    color:white;
+    height: 100vh; 
+    width:100%;
+    background-color: rgba(5,3,33,0.95);
+}
+
+
+
+
+
+@keyframes container {
+    0% {
+        opacity: 0%;
+        top: -20%;
+    }
+    70% {top: 51%;}
+
+    100% {
+        opacity: 100%;
+        top: 50%;
+    }
+}
+
+@keyframes blackout {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+@keyframes sidenav {
+    0% {
+        left:-50%;
+        opacity: 50%;
+    }
+    50% {left: 1%;}
+    100% {
+        left:0.1%;
+        opacity: 100%;
+    }
+}
+
