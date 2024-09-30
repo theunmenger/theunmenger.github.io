@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
     animation-delay: 200ms;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    z-index: 10;
 }
 
 #sidenav ul {
@@ -67,7 +68,7 @@ body::-webkit-scrollbar {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     font-family: sans-serif;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 20px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 50%);
     transition-duration: 400ms;
 }
@@ -98,7 +99,7 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    font-size: 2rem;
+    font-size: 25px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -110,7 +111,6 @@ body::-webkit-scrollbar {
     font-size: 3rem;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 10px;
 }
 
 #container2 {
