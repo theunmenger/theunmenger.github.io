@@ -1,13 +1,50 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
 } 
 
 body {
     display:flex;
+    justify-content: center;
+    background-color: #181529;
 }
 
-.main_container {
+#main-container {
+    background-color: #000000;
+    border: solid;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    padding: 20px;
     display:flex;
-    font-family: "Lucida Console", "Courier New", monospace;
+    flex-direction: row;
+    width: 50%;
+}
+
+#left-container {
+    padding:5px;
+    padding-right: 20px;
+    width:50%;
+    border-right: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+h2 {
+    border-bottom:solid;
+    border-width: 1px;
+    padding: 2px;
+}
+
+p {
+    padding: 5px;
+}
+
+#right-container {
+    padding:5px;
+    padding-left: 20px;
+    width:50%;
 }
