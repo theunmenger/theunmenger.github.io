@@ -21,7 +21,12 @@ body {
     padding: 20px;
     display:flex;
     flex-direction: row;
-    width: 50%;
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(161, 218, 255);
 }
 
 #left-container {
@@ -41,6 +46,11 @@ h2 {
 
 p {
     padding: 5px;
+    border-bottom: solid white 1px;
+}
+
+ul {
+    border-bottom: solid white 1px;
 }
 
 #right-container {
