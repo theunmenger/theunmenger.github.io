@@ -41,7 +41,7 @@ a {
 h2 {
     border-bottom:solid;
     border-width: 1px;
-    padding: 2px;
+    padding: 5px;
 }
 
 p {
@@ -49,12 +49,37 @@ p {
     border-bottom: solid white 1px;
 }
 
-ul {
-    border-bottom: solid white 1px;
-}
-
 #right-container {
     padding:5px;
     padding-left: 20px;
     width:50%;
+}
+
+li {
+    padding: 5px;
+}
+
+#ervaringen {
+    padding: 5px;
+    border-bottom: 1px white solid;
+}
+
+#kwaliteiten-valkuilen {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px white solid;
+}
+
+#kwaliteiten {
+    width: 50%;
+}
+
+#valkuilen {
+    width: 50%;
+}
+
+#ik {
+    padding: 5px;
 }
