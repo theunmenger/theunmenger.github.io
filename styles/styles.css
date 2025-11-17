@@ -22,6 +22,18 @@ body {
     display:flex;
     flex-direction: row;
     width: 70%;
+    opacity:0;
+    animation: startup_main 2s forwards;
+}
+
+.skip #main-container {
+    opacity: 1;
+    animation: none;
+}
+
+@keyframes startup_main {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 a {
@@ -38,21 +50,26 @@ a {
     border-color: white;
 }
 
+#right-container {
+    flex-shrink: 1;
+    padding:5px;
+    padding-left: 20px;
+    width:50%;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
 h2 {
     border-bottom:solid;
     border-width: 1px;
     padding: 5px;
 }
 
-p {
-    padding: 5px;
-    border-bottom: solid white 1px;
-}
-
-#right-container {
-    padding:5px;
-    padding-left: 20px;
-    width:50%;
+#tekst1 {
+    padding-bottom: 5px;
+    border-bottom: solid 1px white;
 }
 
 li {
